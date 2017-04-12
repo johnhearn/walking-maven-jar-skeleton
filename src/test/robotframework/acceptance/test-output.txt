@@ -2,6 +2,7 @@
 Library           Process
 
 *** Test Cases ***
-Run Jar With No Error
+Basic usage
     ${result} =    Run Process   java   -jar   target${/}project.jar
     Should Be Equal As Integers    ${result.rc}    0
+    Should Match    ${result.stdout}    Usage: java -jar project.jar
