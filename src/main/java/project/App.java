@@ -13,7 +13,7 @@ public class App {
 
 	public static void main(String[] args) throws IOException {
 		if (args.length < 1) {
-			System.out.println("Usage: java -jar project.jar");
+			WRITER.println("Usage: java -jar project.jar");
 		} else {
 			printer.print(args);
 		}
