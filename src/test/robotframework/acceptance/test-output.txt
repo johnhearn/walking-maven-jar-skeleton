@@ -6,3 +6,8 @@ Basic usage
     ${result} =    Run Process   java   -jar   target${/}project.jar
     Should Be Equal As Integers    ${result.rc}    0
     Should Match    ${result.stdout}    Usage: java -jar project.jar
+
+Print argument
+    ${result} =    Run Process   java   -jar   target${/}project.jar   Hello world!
+    Should Be Equal As Integers    ${result.rc}    0
+    Should Match    ${result.stdout}    Hello world!
