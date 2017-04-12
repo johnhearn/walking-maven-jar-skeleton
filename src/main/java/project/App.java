@@ -8,7 +8,7 @@ import java.io.IOException;
 public class App {
 
 	public static void main(String[] args) throws IOException {
-		// Do nothing
+		System.out.println("Usage: java -jar project.jar");
 	}
 	
 }
