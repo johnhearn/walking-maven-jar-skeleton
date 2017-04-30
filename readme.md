@@ -6,3 +6,5 @@ Simplest version includes just a basic POM template to generate an executable JA
 To fail the test:
 
 	mvn clean package robotframework:run
+	
+(Use -Dpython.console.encoding=UTF-8 to fix cp0 encoding message)  
